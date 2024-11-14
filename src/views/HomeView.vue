@@ -2,6 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <a-radio v-model:checked="checked">Radio</a-radio>
   </div>
 </template>
 
@@ -13,6 +14,11 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld
+  },
+  data : ()=>{
+    return {
+      checked : false,
+    }
   }
 }
 </script>
